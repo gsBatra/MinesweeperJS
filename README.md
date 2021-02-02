@@ -1,0 +1,2 @@
+# MinesweeperJS
+Minesweeper in JS
