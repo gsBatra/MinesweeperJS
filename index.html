@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Minesweeper</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <h1>MINESWEEPER</h1>
+        <form>
+            <label>Grid Size:</label>
+            <input type="radio" id="size_10" name="gridsize" value="10" checked="true">
+            <label for="size_10">10x10</label>
+            <input type="radio" id="size_20" name="gridsize" value="20">
+            <label for="size_20">20x20</label>
+            <input type="radio" id="size_30" name="gridsize" value="30">
+            <label for="size_30">30x30</label>
+            <br>
+            <label>Mines:</label>
+            <input type="radio" id="mine_10" name="minenum" value="10" checked="true">
+            <label for="mine_10">10</label>
+            <input type="radio" id="mine_20" name="minenum" value="20">
+            <label for="mine_20">20</label>
+            <input type="radio" id="mine_30" name="minenum" value="30">
+            <label for="mine_30">30</label>
+            <input type="radio" id="mine_40" name="minenum" value="40">
+            <label for="mine_40">40</label>
+            <input type="radio" id="mine_50" name="minenum" value="50">
+            <label for="mine_50">50</label>   
+        </form>   
+        <br>
+        <button id="settings" name="settings" type="button">Submit Settings</button>   
+        <table id="grid"></table> <br>
+        <button id="restart" name="restart" type="button" onclick="window.location.reload()">Restart Game</button>
+        <p id="message" class="message"></p>
+        <script src="minesweeper.js"></script>  
+    </body>
+</html>
